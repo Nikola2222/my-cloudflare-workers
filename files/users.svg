@@ -5,6 +5,6 @@
      xmlns:xlink = "http://www.w3.org/1999/xlink"
      xmlns:ev = "http://www.w3.org/2001/xml-events"
      height = "150px"  width = "200px">
-     <image href={{avatarURI}} height="100" width="100" />
+     <image href="{{avatarURI}}" height="100" width="100" />
      <text x="1" y="120">{{lastOnline}}</text>
 </svg>
