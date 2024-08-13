@@ -57,7 +57,7 @@ export default {
 					let nickname = url.searchParams.get('nickname');
 					let dataUser = await fetch('https://shikimori.one/api/users/' + nickname).then(r => r.json());
 					let avatarURI1 = await imageUrlToBase64(dataUser.image.x160);
-					let file = await fetch('https://pastebin.com/raw/nQwviCs6').then(r => r.text());
+					let file = await fetch('https://github.com/Nikola2222/my-cloudflare-workers/raw/main/files/users.svg').then(r => r.text());
 					//console.log(file);
 					const output = Mustache.render(file, {
 						avatarURI: avatarURI1,
@@ -76,7 +76,7 @@ export default {
 								return (Math.random() * (100 - 1) + 1).toFixed(2);
 							}
 						}
-					let file = await fetch('https://pastebin.com/raw/Td5nf0Qk').then(r => r.text());
+					let file = await fetch('https://github.com/Nikola2222/my-cloudflare-workers/raw/main/files/torrent.svg').then(r => r.text());
 					const output = Mustache.render(file, ll);
 					return new Response(output, options);
 					}
